@@ -1,0 +1,13 @@
+{
+	"plugins": [],
+	"presets": [
+		[
+			"babel-preset-gatsby",
+			{
+				"targets": {
+					"browsers": ["last 3 versions", "> 1%", "ie >= 11"]
+				}
+			}
+		]
+	]
+}
