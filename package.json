@@ -54,7 +54,8 @@
     "stylelint-config-prettier": "5.2.0",
     "stylelint-order": "3.0.0",
     "stylelint-prettier": "1.1.1",
-    "stylelint-scss": "3.9.0"
+    "stylelint-scss": "3.9.0",
+    "stylelint-webpack-plugin": "^0.10.5"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
