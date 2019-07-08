@@ -1,11 +1,11 @@
 module.exports = {
 	siteMetadata: {
-		title: `Gatsby Starter Blog`,
-		author: `Kyle Mathews`,
-		description: `A starter blog demonstrating what Gatsby can do.`,
-		siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+		title: `Simon Mayerhofer | Web-Developer`,
+		author: `Simon Mayerhofer`,
+		description: `Simon is a web-developer and co-founder of MEDIADUDES, an agency based in Freiburg, Germany.`,
+		siteUrl: `https://dev.mayerhofer.it/`,
 		social: {
-			twitter: `kylemathews`,
+			twitter: `SimonMayerhofer`,
 		},
 	},
 	plugins: [
@@ -75,11 +75,11 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Gatsby Starter Blog`,
-				short_name: `GatsbyJS`,
+				name: `Simon Mayerhofer Blog`,
+				short_name: `Simon Mayerhofer`,
 				start_url: `/`,
 				background_color: `#ffffff`,
-				theme_color: `#663399`,
+				theme_color: `#111111`,
 				display: `minimal-ui`,
 				icon: `content/assets/gatsby-icon.png`,
 			},

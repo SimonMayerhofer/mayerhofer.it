@@ -1,11 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "name": "mayerhofer.it",
+  "description": "Website and blog of Simon Mayerhofer. Powered by GatsbyJS.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Simon Mayerhofer <simon@mayerhofer.it>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/SimonMayerhofer/mayerhofer.it/issues"
   },
   "dependencies": {
     "gatsby": "2.13.7",
@@ -57,15 +56,15 @@
     "stylelint-scss": "3.9.0",
     "stylelint-webpack-plugin": "^0.10.5"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://www.mayerhofer.it",
   "keywords": [
-    "gatsby"
+    "Simon Mayerhofer"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/SimonMayerhofer/mayerhofer.it"
   },
   "scripts": {
     "build": "gatsby build",
