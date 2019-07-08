@@ -47,7 +47,14 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.2",
     "gatsby-plugin-eslint": "^2.0.5",
-    "prettier": "^1.18.2"
+    "gatsby-plugin-stylelint": "^3.2.0",
+    "prettier": "^1.18.2",
+    "stylelint": "^10.1.0",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-order": "^3.0.0",
+    "stylelint-prettier": "^1.1.1",
+    "stylelint-scss": "^3.9.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -63,7 +70,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write ./**/*.{js,jsx,json,sass,scss,css}",
-    "fix": "eslint --fix .",
+    "fix": "eslint --fix . && stylelint --fix ./**/*.{scss,sass,css}",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""

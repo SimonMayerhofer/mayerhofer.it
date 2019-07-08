@@ -22,6 +22,12 @@ module.exports = {
 			},
 		},
 		{
+			resolve: 'gatsby-plugin-stylelint',
+			options: {
+				files: ['**/*.{scss,sass,css}'],
+			},
+		},
+		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				path: `${__dirname}/content/blog`,
