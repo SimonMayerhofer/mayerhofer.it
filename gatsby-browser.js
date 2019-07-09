@@ -2,6 +2,8 @@
 import React from 'react';
 import Layout from './src/components/Layout';
 
+import './src/styles/main.scss';
+
 // custom typefaces
 // import 'typeface-montserrat';
 
