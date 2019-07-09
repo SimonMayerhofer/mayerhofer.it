@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: `Simon Mayerhofer | Web-Developer`,
+		title: `Simon Mayerhofer`,
 		author: `Simon Mayerhofer`,
 		description: `Simon is a web-developer and co-founder of MEDIADUDES, an agency based in Freiburg, Germany.`,
 		siteUrl: `https://dev.mayerhofer.it/`,

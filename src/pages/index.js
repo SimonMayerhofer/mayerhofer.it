@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 import Bio from '../components/Bio';
 import Page from '../components/Page';
 
-const index = ({ data }) => {
+const index = ({ data, path }) => {
 	const posts = data.allMarkdownRemark.edges;
 
 	return (
-		<Page title="All posts">
+		<Page title="Simon Mayerhofer | Web-Developer" path={path}>
 			<Bio />
 			{posts.map(({ node }) => {
 				const title = node.frontmatter.title || node.fields.slug;
@@ -55,4 +55,5 @@ export const pageQuery = graphql`
 
 index.propTypes = {
 	data: PropTypes.object.isRequired,
+	path: PropTypes.string.isRequired,
 };
