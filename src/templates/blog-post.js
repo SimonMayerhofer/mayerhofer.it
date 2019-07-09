@@ -4,18 +4,16 @@ import PropTypes from 'prop-types';
 
 import Bio from '../components/Bio';
 import Page from '../components/Page';
-import SEO from '../components/SEO';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
 	const post = data.markdownRemark;
 	const { previous, next } = pageContext;
 
 	return (
-		<Page>
-			<SEO
-				title={post.frontmatter.title}
-				description={post.frontmatter.description || post.excerpt}
-			/>
+		<Page
+			title={post.frontmatter.title}
+			description={post.frontmatter.description || post.excerpt}
+		>
 			<h1>{post.frontmatter.title}</h1>
 
 			<p>{post.frontmatter.date}</p>

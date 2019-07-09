@@ -4,14 +4,12 @@ import PropTypes from 'prop-types';
 
 import Bio from '../components/Bio';
 import Page from '../components/Page';
-import SEO from '../components/SEO';
 
 const index = ({ data }) => {
 	const posts = data.allMarkdownRemark.edges;
 
 	return (
-		<Page>
-			<SEO title="All posts" />
+		<Page title="All posts">
 			<Bio />
 			{posts.map(({ node }) => {
 				const title = node.frontmatter.title || node.fields.slug;
