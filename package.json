@@ -66,6 +66,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "dev": "npm run develop",
     "format": "prettier --write ./**/*.{js,jsx,json,sass,scss,css}",
     "fix": "eslint --fix . && stylelint --fix ./**/*.{scss,sass,css}",
     "start": "npm run develop",
