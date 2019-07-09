@@ -2,15 +2,13 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Bio from '../components/Bio';
-import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
-const index = ({ data, location }) => {
-	const siteTitle = data.site.siteMetadata.title;
+const index = ({ data }) => {
 	const posts = data.allMarkdownRemark.edges;
 
 	return (
-		<Layout location={location} title={siteTitle}>
+		<React.Fragment>
 			<SEO title="All posts" />
 			<Bio />
 			{posts.map(({ node }) => {
@@ -29,7 +27,7 @@ const index = ({ data, location }) => {
 					</div>
 				);
 			})}
-		</Layout>
+		</React.Fragment>
 	);
 };
 
@@ -37,11 +35,6 @@ export default index;
 
 export const pageQuery = graphql`
 	query {
-		site {
-			siteMetadata {
-				title
-			}
-		}
 		allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
 			edges {
 				node {

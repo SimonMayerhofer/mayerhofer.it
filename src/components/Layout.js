@@ -1,7 +1,17 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, children }) => {
+	const { title } = useStaticQuery(graphql`
+		query LayoutQuery {
+			site {
+				siteMetadata {
+					title
+				}
+			}
+		}
+	`);
+
 	const rootPath = `${__PATH_PREFIX__}/`;
 	let header;
 
