@@ -9,7 +9,11 @@ const index = ({ data, path }) => {
 	const posts = data.allMarkdownRemark.edges;
 
 	return (
-		<Page title="Simon Mayerhofer | Web-Developer" path={path}>
+		<Page
+			title="Simon Mayerhofer | Web-Developer"
+			description={data.site.siteMetadata.description}
+			path={path}
+		>
 			<Bio />
 			{posts.map(({ node }) => {
 				const title = node.frontmatter.title || node.fields.slug;
@@ -35,6 +39,11 @@ export default index;
 
 export const pageQuery = graphql`
 	query {
+		site {
+			siteMetadata {
+				description
+			}
+		}
 		allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
 			edges {
 				node {
