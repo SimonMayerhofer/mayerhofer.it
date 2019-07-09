@@ -1,0 +1,9 @@
+@import '../styles/mixins/mixins.scss';
+
+.Bio {
+	color: #00f;
+
+	a {
+		@include red;
+	}
+}
