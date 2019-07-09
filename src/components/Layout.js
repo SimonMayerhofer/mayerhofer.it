@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 
 const Layout = ({ location, children }) => {
 	const { site } = useStaticQuery(graphql`
@@ -48,3 +49,10 @@ const Layout = ({ location, children }) => {
 };
 
 export default Layout;
+
+Layout.propTypes = {
+	location: PropTypes.shape({
+		pathname: PropTypes.string.isRequired,
+	}).isRequired,
+	children: PropTypes.element.isRequired,
+};

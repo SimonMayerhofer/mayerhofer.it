@@ -11,6 +11,7 @@ import Layout from './src/components/Layout';
  * and don't need to manually include it in every page.
  * @see https://www.gatsbyjs.org/docs/browser-apis/#wrapPageElement
  */
+// eslint-disable-next-line react/prop-types
 export const wrapPageElement = ({ element, props }) => {
 	// props provide same data to Layout as Page element will get
 	// including location, data, etc - no need to pass it

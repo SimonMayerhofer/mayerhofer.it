@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 
 import Bio from '../components/Bio';
 import Page from '../components/Page';
@@ -61,3 +62,11 @@ export const pageQuery = graphql`
 		}
 	}
 `;
+
+BlogPostTemplate.propTypes = {
+	data: PropTypes.object.isRequired,
+	pageContext: PropTypes.shape({
+		previous: PropTypes.object.isRequired,
+		next: PropTypes.object.isRequired,
+	}).isRequired,
+};

@@ -16,7 +16,7 @@
 		"react/jsx-indent-props": [2, "tab"],
 		"react/jsx-filename-extension": 0,
 		"no-prototype-builtins": 0,
-		"react/prop-types": 0,
+		"react/prop-types": 1,
 		"react/forbid-prop-types": 0,
 		"react/no-danger": 0
 	},

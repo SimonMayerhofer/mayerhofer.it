@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Page = ({ children }) => {
 	return (
@@ -11,3 +12,7 @@ const Page = ({ children }) => {
 };
 
 export default Page;
+
+Page.propTypes = {
+	children: PropTypes.element.isRequired,
+};
