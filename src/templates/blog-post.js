@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Bio from '../components/Bio';
+import Page from '../components/Page';
 import SEO from '../components/SEO';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
@@ -9,7 +10,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 	const { previous, next } = pageContext;
 
 	return (
-		<React.Fragment>
+		<Page>
 			<SEO
 				title={post.frontmatter.title}
 				description={post.frontmatter.description || post.excerpt}
@@ -40,7 +41,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 					)}
 				</li>
 			</ul>
-		</React.Fragment>
+		</Page>
 	);
 };
 

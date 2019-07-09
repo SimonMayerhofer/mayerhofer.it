@@ -2,13 +2,14 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Bio from '../components/Bio';
+import Page from '../components/Page';
 import SEO from '../components/SEO';
 
 const index = ({ data }) => {
 	const posts = data.allMarkdownRemark.edges;
 
 	return (
-		<React.Fragment>
+		<Page>
 			<SEO title="All posts" />
 			<Bio />
 			{posts.map(({ node }) => {
@@ -27,7 +28,7 @@ const index = ({ data }) => {
 					</div>
 				);
 			})}
-		</React.Fragment>
+		</Page>
 	);
 };
 

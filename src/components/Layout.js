@@ -7,12 +7,13 @@ const Layout = ({ location, children }) => {
 			site {
 				siteMetadata {
 					title
+					author
 				}
 			}
 		}
 	`);
 
-	const { title } = site.siteMetadata;
+	const { title, author } = site.siteMetadata;
 
 	const rootPath = `${__PATH_PREFIX__}/`;
 	let header;
@@ -30,16 +31,19 @@ const Layout = ({ location, children }) => {
 			</h3>
 		);
 	}
+
 	return (
-		<div>
-			<header>{header}</header>
-			<main>{children}</main>
-			<footer>
-				© {new Date().getFullYear()}, Built with
-				{` `}
-				<a href="https://www.gatsbyjs.org">Gatsby</a>
+		<React.Fragment>
+			<header className="header" role="banner">
+				{header}
+			</header>
+
+			{children}
+
+			<footer className="footer">
+				© {new Date().getFullYear()} {author}
 			</footer>
-		</div>
+		</React.Fragment>
 	);
 };
 
