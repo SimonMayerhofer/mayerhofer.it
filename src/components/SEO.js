@@ -9,6 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import { isRootPath } from '../utils/path';
 
 function SEO({ description, lang, meta, title, path }) {
 	const { site } = useStaticQuery(
@@ -27,7 +28,7 @@ function SEO({ description, lang, meta, title, path }) {
 
 	const metaDescription = description;
 
-	const isHome = path === '/';
+	const isHome = isRootPath(path);
 
 	return (
 		<Helmet

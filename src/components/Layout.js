@@ -2,7 +2,9 @@ import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
-const Layout = ({ location, children }) => {
+import { isRootPath } from '../utils/path';
+
+const Layout = ({ path, children }) => {
 	const { site } = useStaticQuery(graphql`
 		query LayoutQuery {
 			site {
@@ -16,10 +18,9 @@ const Layout = ({ location, children }) => {
 
 	const { title, author } = site.siteMetadata;
 
-	const rootPath = `${__PATH_PREFIX__}/`;
 	let header;
 
-	if (location.pathname === rootPath) {
+	if (isRootPath(path)) {
 		header = (
 			<h1>
 				<Link to="/">{title}</Link>
@@ -51,8 +52,6 @@ const Layout = ({ location, children }) => {
 export default Layout;
 
 Layout.propTypes = {
-	location: PropTypes.shape({
-		pathname: PropTypes.string.isRequired,
-	}).isRequired,
+	path: PropTypes.string.isRequired,
 	children: PropTypes.element.isRequired,
 };
