@@ -1,8 +1,10 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react';
-import Layout from './src/components/Layout';
 
+import 'what-input';
 import './src/styles/main.scss';
+
+import Layout from './src/components/Layout';
 
 // custom typefaces
 // import 'typeface-montserrat';
