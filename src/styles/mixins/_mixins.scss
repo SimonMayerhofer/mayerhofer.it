@@ -1,3 +1,11 @@
+@charset 'utf-8';
+
+// All variables and settings for foundation.
+@import '../settings';
+
+// All Foundation mixins.
+@import '~foundation-sites/scss/foundation';
+
 @mixin red {
 	color: #f00;
 }
