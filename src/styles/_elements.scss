@@ -1,0 +1,21 @@
+p {
+	font-size: rem-calc(18);
+	letter-spacing: 1;
+
+	@include breakpoint(small only) {
+		font-size: rem-calc(16);
+	}
+}
+
+h2 {
+	font-weight: 700;
+}
+
+h4 {
+	font-weight: $global-weight-bold;
+}
+
+h6 {
+	text-transform: uppercase;
+	font-weight: $global-weight-bold;
+}

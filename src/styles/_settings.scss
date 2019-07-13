@@ -34,15 +34,15 @@ $black: #000;
 $white: #fafafa;
 $body-background: $dark-gray;
 $body-font-color: $white;
-$body-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+$body-font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 	'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 	sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-position: 1rem;
-$global-weight-normal: normal;
-$global-weight-bold: bold;
+$global-weight-normal: 300;
+$global-weight-bold: 700;
 $global-radius: 0;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
@@ -71,8 +71,8 @@ $breakpoint-classes: (small medium large);
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-family: 'Nunito', $body-font-family;
+$header-font-weight: 400;
 $header-font-style: normal;
 $font-family-monospace: 'Consolas', 'Liberation Mono', 'Courier', monospace;
 $header-color: $white;
@@ -81,13 +81,13 @@ $header-margin-bottom: 0.5rem;
 $header-styles: (
 	small: (
 		'h1': (
-			'font-size': 24,
+			'font-size': 28,
 		),
 		'h2': (
-			'font-size': 20,
+			'font-size': 24,
 		),
 		'h3': (
-			'font-size': 19,
+			'font-size': 21,
 		),
 		'h4': (
 			'font-size': 18,
@@ -96,21 +96,21 @@ $header-styles: (
 			'font-size': 17,
 		),
 		'h6': (
-			'font-size': 16,
+			'font-size': 15,
 		),
 	),
 	medium: (
 		'h1': (
-			'font-size': 48,
+			'font-size': 32,
 		),
 		'h2': (
-			'font-size': 40,
+			'font-size': 26,
 		),
 		'h3': (
-			'font-size': 31,
+			'font-size': 22,
 		),
 		'h4': (
-			'font-size': 25,
+			'font-size': 20,
 		),
 		'h5': (
 			'font-size': 20,
@@ -123,7 +123,7 @@ $header-styles: (
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $light-gray;
-$paragraph-lineheight: 1.6;
+$paragraph-lineheight: 1.7;
 $paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $white;
