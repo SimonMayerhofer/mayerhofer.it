@@ -7,7 +7,8 @@ import './src/styles/main.scss';
 import Layout from './src/components/Layout';
 
 // custom typefaces
-// import 'typeface-montserrat';
+import 'typeface-nunito';
+import 'typeface-roboto';
 
 /*
  * Wrap Layout component around page elements,
