@@ -47,6 +47,7 @@
 		],
 		"function-url-quotes": "always",
 		"no-descending-specificity": null,
-		"color-named": "never"
+		"color-named": "never",
+		"max-nesting-depth": 10
 	}
 }
