@@ -25,7 +25,7 @@ Page.defaultProps = {
 };
 
 Page.propTypes = {
-	children: PropTypes.element.isRequired,
+	children: PropTypes.node.isRequired,
 	title: PropTypes.string.isRequired,
 	description: PropTypes.string,
 	lang: PropTypes.string,
