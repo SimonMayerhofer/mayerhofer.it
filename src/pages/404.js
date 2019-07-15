@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import Page from '../components/Page';
 
-const NotFoundPage = ({ path }) => {
+const NotFoundPage = () => {
 	return (
-		<Page title="404: Not Found" path={path}>
+		<Page title="404: Not Found">
 			<h1>Not Found</h1>
 			<p>You just hit a route that doesn&#39;t exist... the sadness.</p>
 		</Page>
@@ -13,7 +13,3 @@ const NotFoundPage = ({ path }) => {
 };
 
 export default NotFoundPage;
-
-NotFoundPage.propTypes = {
-	path: PropTypes.string.isRequired,
-};

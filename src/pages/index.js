@@ -5,12 +5,11 @@ import PropTypes from 'prop-types';
 import ArticleList from '../components/ArticleList';
 import Page from '../components/Page';
 
-const index = ({ data, path }) => {
+const index = ({ data }) => {
 	return (
 		<Page
 			title="Simon Mayerhofer | Web-Developer"
 			description={data.site.siteMetadata.description}
-			path={path}
 		>
 			<h2>LATEST ARTICLES</h2>
 
@@ -33,5 +32,4 @@ export const pageQuery = graphql`
 
 index.propTypes = {
 	data: PropTypes.object.isRequired,
-	path: PropTypes.string.isRequired,
 };
