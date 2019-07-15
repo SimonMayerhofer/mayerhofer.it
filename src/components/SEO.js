@@ -9,9 +9,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import { Location } from '@reach/router';
 import { isRootPath } from '../utils/path';
 
-function SEO({ description, lang, meta, title, path }) {
+function SEO({ description, lang, meta, title }) {
 	const { site } = useStaticQuery(
 		graphql`
 			query {
@@ -28,50 +29,60 @@ function SEO({ description, lang, meta, title, path }) {
 
 	const metaDescription = description;
 
-	const isHome = isRootPath(path);
-
 	return (
-		<Helmet
-			htmlAttributes={{
-				lang,
+		<Location>
+			{({ location }) => {
+				const isHome = isRootPath(location.pathname);
+
+				return (
+					<Helmet
+						htmlAttributes={{
+							lang,
+						}}
+						title={title}
+						titleTemplate={isHome ? title : `%s | ${site.siteMetadata.title}`}
+						meta={[
+							{
+								name: `description`,
+								content: metaDescription,
+							},
+							{
+								property: `og:title`,
+								content: isHome
+									? title
+									: `${title} | ${site.siteMetadata.title}`,
+							},
+							{
+								property: `og:description`,
+								content: metaDescription,
+							},
+							{
+								property: `og:type`,
+								content: `website`,
+							},
+							{
+								name: `twitter:card`,
+								content: `summary`,
+							},
+							{
+								name: `twitter:creator`,
+								content: site.siteMetadata.author,
+							},
+							{
+								name: `twitter:title`,
+								content: isHome
+									? title
+									: `${title} | ${site.siteMetadata.title}`,
+							},
+							{
+								name: `twitter:description`,
+								content: metaDescription,
+							},
+						].concat(meta)}
+					/>
+				);
 			}}
-			title={title}
-			titleTemplate={isHome ? title : `%s | ${site.siteMetadata.title}`}
-			meta={[
-				{
-					name: `description`,
-					content: metaDescription,
-				},
-				{
-					property: `og:title`,
-					content: isHome ? title : `${title} | ${site.siteMetadata.title}`,
-				},
-				{
-					property: `og:description`,
-					content: metaDescription,
-				},
-				{
-					property: `og:type`,
-					content: `website`,
-				},
-				{
-					name: `twitter:card`,
-					content: `summary`,
-				},
-				{
-					name: `twitter:creator`,
-					content: site.siteMetadata.author,
-				},
-				{
-					name: `twitter:title`,
-					content: isHome ? title : `${title} | ${site.siteMetadata.title}`,
-				},
-				{
-					name: `twitter:description`,
-					content: metaDescription,
-				},
-			].concat(meta)}
-		/>
+		</Location>
 	);
 }
 
@@ -86,7 +97,6 @@ SEO.propTypes = {
 	lang: PropTypes.string,
 	meta: PropTypes.arrayOf(PropTypes.object),
 	title: PropTypes.string.isRequired,
-	path: PropTypes.string.isRequired,
 };
 
 export default SEO;

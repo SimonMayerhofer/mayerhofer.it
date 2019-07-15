@@ -1,18 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import SEO from './SEO';
 
-const Page = ({ children, path, title, description, lang, meta }) => {
+const Page = ({ children, title, description, lang, meta }) => {
 	return (
 		<React.Fragment>
-			<SEO
-				title={title}
-				description={description}
-				lang={lang}
-				meta={meta}
-				path={path}
-			/>
+			<SEO title={title} description={description} lang={lang} meta={meta} />
 
 			<div className="main-container">
 				<div className="main-grid">
@@ -33,7 +26,6 @@ Page.defaultProps = {
 
 Page.propTypes = {
 	children: PropTypes.element.isRequired,
-	path: PropTypes.string.isRequired,
 	title: PropTypes.string.isRequired,
 	description: PropTypes.string,
 	lang: PropTypes.string,

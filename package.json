@@ -57,6 +57,9 @@
     "stylelint-scss": "3.9.0",
     "stylelint-webpack-plugin": "0.10.5"
   },
+  "peerDependencies": {
+    "@reach/router": "^1.1.1"
+  },
   "homepage": "https://www.mayerhofer.it",
   "keywords": [
     "Simon Mayerhofer"

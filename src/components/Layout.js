@@ -2,9 +2,10 @@ import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
+import { Location } from '@reach/router';
 import { isRootPath } from '../utils/path';
 
-const Layout = ({ path, children }) => {
+const Layout = ({ children }) => {
 	const { site } = useStaticQuery(graphql`
 		query LayoutQuery {
 			site {
@@ -18,40 +19,35 @@ const Layout = ({ path, children }) => {
 
 	const { title, author } = site.siteMetadata;
 
-	let header;
-
-	if (isRootPath(path)) {
-		header = (
-			<h1>
-				<Link to="/">{title}</Link>
-			</h1>
-		);
-	} else {
-		header = (
-			<h3>
-				<Link to="/">{title}</Link>
-			</h3>
-		);
-	}
-
 	return (
-		<React.Fragment>
-			<header className="header" role="banner">
-				{header}
-			</header>
+		<Location>
+			{({ location }) => (
+				<React.Fragment>
+					<header className="header" role="banner">
+						{isRootPath(location.pathname) ? (
+							<h1>
+								<Link to="/">{title}</Link>
+							</h1>
+						) : (
+							<h3>
+								<Link to="/">{title}</Link>
+							</h3>
+						)}
+					</header>
 
-			{children}
+					{children}
 
-			<footer className="footer">
-				© {new Date().getFullYear()} {author}
-			</footer>
-		</React.Fragment>
+					<footer className="footer">
+						© {new Date().getFullYear()} {author}
+					</footer>
+				</React.Fragment>
+			)}
+		</Location>
 	);
 };
 
 export default Layout;
 
 Layout.propTypes = {
-	path: PropTypes.string.isRequired,
 	children: PropTypes.element.isRequired,
 };
