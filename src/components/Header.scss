@@ -1,0 +1,65 @@
+@import '../styles/mixins/mixins';
+
+.Header {
+	background-color: $black;
+	background-image: url('../assets/header-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	padding: rem-calc(70 0);
+
+	@include xy-grid-container();
+
+	&--compact {
+		padding: rem-calc(20 0);
+	}
+
+	&__logo {
+		width: 60px;
+		height: 60px;
+
+		@include breakpoint(medium) {
+			width: 75px;
+			height: 75px;
+		}
+	}
+
+	&--compact &__logo {
+		width: 60px;
+		height: 60px;
+	}
+
+	&__avatar {
+		margin-top: rem-calc(50);
+		border-radius: 200px;
+		width: 120px;
+		height: 120px;
+
+		@include breakpoint(medium) {
+			width: 175px;
+			height: 175px;
+		}
+	}
+
+	&__title {
+		font-weight: $global-weight-bold;
+		margin: rem-calc(50 0 20);
+
+		@include breakpoint(medium) {
+			font-size: rem-calc(36);
+		}
+	}
+
+	&__bio {
+		font-size: rem-calc(20);
+		line-height: rem-calc(28);
+
+		@include breakpoint(medium) {
+			font-size: rem-calc(22);
+			line-height: rem-calc(32);
+		}
+	}
+}
