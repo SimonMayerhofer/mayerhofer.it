@@ -3,6 +3,9 @@ import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPen } from '@fortawesome/free-solid-svg-icons';
+
 import Bio from '../components/Bio';
 import Page from '../components/Page';
 
@@ -37,6 +40,18 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 
 				<section dangerouslySetInnerHTML={{ __html: post.html }} />
 			</article>
+
+			<div className="blog-post__edit-link-wrapper">
+				<a
+					className="blog-post__edit-link"
+					href={`https://github.com/SimonMayerhofer/mayerhofer.it/blob/master/src/blog/${post.parent.relativePath}`}
+					target="_blank"
+					rel="noopener noreferrer nofollow"
+				>
+					<FontAwesomeIcon className="blog-post__edit-link-icon" icon={faPen} />{' '}
+					Edit this post on GitHub
+				</a>
+			</div>
 
 			<Bio />
 
@@ -78,6 +93,11 @@ export const pageQuery = graphql`
 							...GatsbyImageSharpFluid_withWebp
 						}
 					}
+				}
+			}
+			parent {
+				... on File {
+					relativePath
 				}
 			}
 		}

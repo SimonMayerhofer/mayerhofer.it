@@ -1,6 +1,8 @@
 @import '../styles/mixins/mixins';
 
 .blog-post {
+	margin-bottom: rem-calc(25);
+
 	&__date {
 		font-family: $header-font-family;
 		font-weight: $global-weight-bold;
@@ -30,6 +32,18 @@
 			@include breakpoint(small only) {
 				margin: rem-calc(25 0);
 			}
+		}
+	}
+
+	&__edit-link {
+		&-wrapper {
+			text-align: right;
+			margin-bottom: rem-calc(70);
+		}
+
+		&-icon {
+			font-size: rem-calc(14);
+			margin-right: rem-calc(5);
 		}
 	}
 }
