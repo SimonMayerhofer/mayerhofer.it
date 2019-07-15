@@ -1,31 +1,17 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
 import Header from './Header';
+import Footer from './Footer';
 
 const Layout = ({ children }) => {
-	const { site } = useStaticQuery(graphql`
-		query LayoutQuery {
-			site {
-				siteMetadata {
-					author
-				}
-			}
-		}
-	`);
-
-	const { author } = site.siteMetadata;
-
 	return (
 		<React.Fragment>
 			<Header />
 
 			{children}
 
-			<footer className="footer">
-				© {new Date().getFullYear()} {author}
-			</footer>
+			<Footer />
 		</React.Fragment>
 	);
 };
