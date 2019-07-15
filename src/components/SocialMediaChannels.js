@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faGithub,
+	faCodepen,
 	faFacebookF,
 	faStackOverflow,
 	faTwitter,
@@ -21,6 +22,7 @@ const SocialMediaChannels = () => {
 					siteMetadata {
 						social {
 							github
+							codepen
 							stackoverflow
 							facebook
 							twitter
@@ -48,6 +50,21 @@ const SocialMediaChannels = () => {
 					<FontAwesomeIcon
 						className="SocialMediaChannels__icon"
 						icon={faGithub}
+					/>
+				</a>
+			) : null}
+
+			{channels.codepen ? (
+				<a
+					className="SocialMediaChannels__link"
+					href={`https://codepen.io/${channels.codepen}/`}
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="CodePen"
+				>
+					<FontAwesomeIcon
+						className="SocialMediaChannels__icon"
+						icon={faCodepen}
 					/>
 				</a>
 			) : null}

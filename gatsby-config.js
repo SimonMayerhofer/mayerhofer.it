@@ -6,6 +6,7 @@ module.exports = {
 		siteUrl: `https://dev.mayerhofer.it/`,
 		social: {
 			github: 'SimonMayerhofer',
+			codepen: 'maysi',
 			stackoverflow: '2180161',
 			facebook: 'mayerhofersimon',
 			twitter: `SimonMayerhofer`,
