@@ -11,9 +11,8 @@ import Page from '../components/Page';
 
 import './blog-post.scss';
 
-const BlogPostTemplate = ({ data, pageContext }) => {
+const BlogPostTemplate = ({ data }) => {
 	const post = data.markdownRemark;
-	const { previous, next } = pageContext;
 
 	return (
 		<Page
@@ -54,23 +53,6 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 			</div>
 
 			<Bio />
-
-			<ul>
-				{previous && (
-					<li>
-						<Link to={previous.fields.slug} rel="prev">
-							← {previous.frontmatter.title}
-						</Link>
-					</li>
-				)}
-				{next && (
-					<li>
-						<Link to={next.fields.slug} rel="next">
-							{next.frontmatter.title} →
-						</Link>
-					</li>
-				)}
-			</ul>
 		</Page>
 	);
 };
@@ -106,8 +88,4 @@ export const pageQuery = graphql`
 
 BlogPostTemplate.propTypes = {
 	data: PropTypes.object.isRequired,
-	pageContext: PropTypes.shape({
-		previous: PropTypes.object,
-		next: PropTypes.object,
-	}).isRequired,
 };
