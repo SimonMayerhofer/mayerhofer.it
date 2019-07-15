@@ -64,7 +64,7 @@ export const pageQuery = graphql`
 BlogPostTemplate.propTypes = {
 	data: PropTypes.object.isRequired,
 	pageContext: PropTypes.shape({
-		previous: PropTypes.object.isRequired,
-		next: PropTypes.object.isRequired,
+		previous: PropTypes.object,
+		next: PropTypes.object,
 	}).isRequired,
 };
