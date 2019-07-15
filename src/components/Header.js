@@ -4,6 +4,8 @@ import Image from 'gatsby-image';
 import { Location } from '@reach/router';
 import { isRootPath } from '../utils/path';
 
+import SocialMediaChannels from './SocialMediaChannels';
+
 import logo from '../assets/logo-white.svg';
 import './Header.scss';
 
@@ -47,6 +49,7 @@ const Header = () => {
 								/>
 
 								<h1 className="Header__title">{author}</h1>
+
 								<p className="Header__bio">
 									Web-Developer,
 									<br />
@@ -59,6 +62,8 @@ const Header = () => {
 										<b>MEDIA</b>DUDES
 									</a>
 								</p>
+
+								<SocialMediaChannels />
 							</React.Fragment>
 						) : null}
 					</header>

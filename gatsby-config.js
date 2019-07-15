@@ -5,7 +5,12 @@ module.exports = {
 		description: `Simon is a web-developer and co-founder of MEDIADUDES, an agency based in Freiburg, Germany.`,
 		siteUrl: `https://dev.mayerhofer.it/`,
 		social: {
+			github: 'SimonMayerhofer',
+			stackoverflow: '2180161',
+			facebook: 'mayerhofersimon',
 			twitter: `SimonMayerhofer`,
+			linkedin: 'simonmayerhofer',
+			xing: 'Simon_Mayerhofer5',
 		},
 	},
 	plugins: [

@@ -1,0 +1,25 @@
+@import '../styles/mixins/mixins';
+
+.SocialMediaChannels {
+	font-size: 40px;
+
+	@include breakpoint(small only) {
+		font-size: 35px;
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 1em;
+		background: $white;
+		width: 1em;
+		height: 1em;
+		margin: 0.2em;
+	}
+
+	&__icon {
+		font-size: 0.6em;
+		color: $black;
+	}
+}
