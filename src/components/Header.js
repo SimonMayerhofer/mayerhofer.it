@@ -14,7 +14,7 @@ const Header = () => {
 		query HeaderQuery {
 			avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
 				childImageSharp {
-					fluid(maxWidth: 175, maxHeight: 175) {
+					fluid(maxWidth: 250, maxHeight: 250) {
 						...GatsbyImageSharpFluid_withWebp
 					}
 				}
