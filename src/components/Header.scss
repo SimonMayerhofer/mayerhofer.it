@@ -15,6 +15,7 @@
 
 	&--compact {
 		padding: rem-calc(20 0);
+		background-image: none;
 	}
 
 	&__logo {
@@ -28,8 +29,8 @@
 	}
 
 	&--compact &__logo {
-		width: 60px;
-		height: 60px;
+		width: 40px;
+		height: 40px;
 	}
 
 	&__avatar {
