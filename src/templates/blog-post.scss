@@ -1,0 +1,35 @@
+@import '../styles/mixins/mixins';
+
+.blog-post {
+	&__date {
+		font-family: $header-font-family;
+		font-weight: $global-weight-bold;
+		color: $light-gray;
+		font-size: rem-calc(14);
+	}
+
+	&__heading {
+		margin: rem-calc(25 0 40);
+
+		@include breakpoint(small only) {
+			margin: rem-calc(25 0);
+		}
+	}
+
+	&__featured-image {
+		max-width: 1024px;
+		margin: 0 auto;
+
+		&-wrapper {
+			position: relative;
+			width: 100vw;
+			transform: translateX(-50%);
+			left: 50%;
+			margin: rem-calc(40 0);
+
+			@include breakpoint(small only) {
+				margin: rem-calc(25 0);
+			}
+		}
+	}
+}

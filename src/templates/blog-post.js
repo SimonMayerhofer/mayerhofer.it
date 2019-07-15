@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 
 import Bio from '../components/Bio';
 import Page from '../components/Page';
+
+import './blog-post.scss';
 
 const BlogPostTemplate = ({ data, pageContext }) => {
 	const post = data.markdownRemark;
@@ -14,31 +17,44 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 			title={post.frontmatter.title}
 			description={post.frontmatter.description || post.excerpt}
 		>
-			<h1>{post.frontmatter.title}</h1>
+			<article className="blog-post">
+				<header>
+					<time className="blog-post__date" dateTime={post.frontmatter.date}>
+						{post.frontmatter.date}
+					</time>
 
-			<p>{post.frontmatter.date}</p>
+					<h1 className="blog-post__heading">{post.frontmatter.title}</h1>
 
-			<div dangerouslySetInnerHTML={{ __html: post.html }} />
+					{post && post.frontmatter && post.frontmatter.featuredImage && (
+						<div className="blog-post__featured-image-wrapper">
+							<Img
+								className="blog-post__featured-image"
+								fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
+							/>
+						</div>
+					)}
+				</header>
 
-			<hr />
+				<section dangerouslySetInnerHTML={{ __html: post.html }} />
+			</article>
 
 			<Bio />
 
 			<ul>
-				<li>
-					{previous && (
+				{previous && (
+					<li>
 						<Link to={previous.fields.slug} rel="prev">
 							← {previous.frontmatter.title}
 						</Link>
-					)}
-				</li>
-				<li>
-					{next && (
+					</li>
+				)}
+				{next && (
+					<li>
 						<Link to={next.fields.slug} rel="next">
 							{next.frontmatter.title} →
 						</Link>
-					)}
-				</li>
+					</li>
+				)}
 			</ul>
 		</Page>
 	);
@@ -54,8 +70,15 @@ export const pageQuery = graphql`
 			html
 			frontmatter {
 				title
-				date(formatString: "MMMM DD, YYYY")
+				date(formatString: "YYYY-MM-DD")
 				description
+				featuredImage {
+					childImageSharp {
+						fluid(maxWidth: 1024) {
+							...GatsbyImageSharpFluid_withWebp
+						}
+					}
+				}
 			}
 		}
 	}
