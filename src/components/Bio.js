@@ -9,6 +9,8 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 
+import SocialMediaChannels from './SocialMediaChannels';
+
 import './Bio.scss';
 
 const Bio = () => {
@@ -16,34 +18,41 @@ const Bio = () => {
 		query BioQuery {
 			avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
 				childImageSharp {
-					fixed(width: 50, height: 50) {
-						...GatsbyImageSharpFixed
+					fluid(maxWidth: 150) {
+						...GatsbyImageSharpFluid_withWebp
 					}
 				}
 			}
 			site {
 				siteMetadata {
 					author
-					social {
-						twitter
-					}
 				}
 			}
 		}
 	`);
 
-	const { author, social } = data.site.siteMetadata;
+	const { author } = data.site.siteMetadata;
 	return (
 		<div className="Bio">
-			<Image fixed={data.avatar.childImageSharp.fixed} alt={author} />
-			<p>
-				Written by <strong>{author}</strong> who lives and works in San
-				Francisco building useful things.
-				{` `}
-				<a href={`https://twitter.com/${social.twitter}`}>
-					You should follow him on Twitter
-				</a>
-			</p>
+			<Image
+				className="Bio__avatar"
+				fluid={data.avatar.childImageSharp.fluid}
+				alt=""
+			/>
+			<div className="Bio__content">
+				<h2>{author}</h2>
+				<p className="Bio__description">
+					Web-Developer, Co-Founder of{' '}
+					<a
+						href="https://mediadudes.lol?utm_source=website&utm_medium=referral&utm_campaign=simon&utm_content=bio_home"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<b>MEDIA</b>DUDES
+					</a>
+				</p>
+				<SocialMediaChannels />
+			</div>
 		</div>
 	);
 };

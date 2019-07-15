@@ -1,9 +1,41 @@
 @import '../styles/mixins/mixins';
 
 .Bio {
-	color: #00f;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 
-	a {
-		@include red;
+	@include breakpoint(small only) {
+		align-items: center;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	&__avatar {
+		border-radius: 100%;
+		width: 150px;
+		max-height: 150px;
+
+		@include breakpoint(small only) {
+			width: 120px;
+			margin-bottom: rem-calc(25);
+		}
+	}
+
+	&__content {
+		margin-left: rem-calc(25);
+		max-width: 400px;
+
+		@include breakpoint(small only) {
+			flex: 1 0 100%;
+			text-align: center;
+			margin-left: 0;
+		}
+	}
+
+	.SocialMediaChannels__link:first-child {
+		@include breakpoint(medium) {
+			margin-left: 0;
+		}
 	}
 }
