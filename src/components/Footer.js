@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
 import './Footer.scss';
 
@@ -19,6 +19,8 @@ const Footer = () => {
 	return (
 		<footer className="Footer">
 			© {new Date().getFullYear()} {author}
+			<br />
+			<Link to="/site-notice/">Site Notice</Link>
 		</footer>
 	);
 };
