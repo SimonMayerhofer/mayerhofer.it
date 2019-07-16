@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
 	siteMetadata: {
 		title: `Simon Mayerhofer`,
 		author: `Simon Mayerhofer`,
@@ -72,12 +72,6 @@ module.exports = {
 		},
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
-		{
-			resolve: `gatsby-plugin-google-analytics`,
-			options: {
-				// trackingId: `ADD YOUR TRACKING ID HERE`,
-			},
-		},
 		`gatsby-plugin-feed`,
 		{
 			resolve: `gatsby-plugin-manifest`,
@@ -95,3 +89,21 @@ module.exports = {
 		`gatsby-plugin-react-helmet`,
 	],
 };
+
+// only add analytics if site is published with netlify.
+if (process.env.CONTEXT === 'production') {
+	const googleAnalyticsCfg = {
+		resolve: `gatsby-plugin-google-analytics`,
+		options: {
+			trackingId: 'UA-143997142-1',
+			// Defines where to place the tracking script - `true` in the head and `false` in the body
+			head: true,
+			anonymize: true,
+			respectDNT: true,
+		},
+	};
+
+	config.plugins.push(googleAnalyticsCfg);
+}
+
+module.exports = config;
