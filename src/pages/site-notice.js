@@ -25,7 +25,7 @@ const SiteNotice = () => {
 				<br />
 				Telefax: 076188795528
 				<br />
-				E-mail: sitenotice@maysi.de
+				E-mail: sitenotice[-at-]maysi.de
 			</p>
 			<h2>Responsible for the content according to § 55(2) RStV</h2>
 			<p>
