@@ -3,16 +3,17 @@
 	<br>
 	<h1>Simon Mayerhofer's website</h1>
 	<sub>Built with <a href="https://github.com/gatsbyjs/gatsby">Gatsby</a></sub>
-</div>
-
----
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/SimonMayerhofer/mayerhofer.it.svg)
 ![GitHub](https://img.shields.io/github/license/SimonMayerhofer/mayerhofer.it.svg)
 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m778813857-8ed930410d1833a9f4209219.svg)
 ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m778813857-8ed930410d1833a9f4209219.svg?label=uptime%20last%2030%20days)
 
-Personal website of Simon Mayerhofer. Visit it at [www.mayerhofer.it](https://www.mayerhofer.it).
+Visit it at [www.mayerhofer.it](https://www.mayerhofer.it).
+
+</div>
+
+---
 
 ## How to add a blog post
 
