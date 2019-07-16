@@ -1,0 +1,32 @@
+@import '../styles/mixins/mixins';
+
+.WorkCTA {
+	background: $black;
+	padding: rem-calc(70 0);
+	text-align: center;
+
+	@include xy-grid-container();
+
+	&__heading {
+		text-transform: uppercase;
+		margin-bottom: rem-calc(40);
+	}
+
+	&__button {
+		background: $white;
+		color: $black;
+		border: 2px solid $white;
+		padding: rem-calc(5 30);
+		display: inline-block;
+		border-radius: 50px;
+		transition: all 0.2s;
+		text-transform: uppercase;
+		font-family: $header-font-family;
+
+		&:hover,
+		&:focus {
+			background: none;
+			color: $white;
+		}
+	}
+}
