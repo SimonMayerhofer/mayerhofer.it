@@ -3,7 +3,7 @@
 	<br>
 	<h1>Simon Mayerhofer's website</h1>
 	<sub>Built with <a href="https://github.com/gatsbyjs/gatsby">Gatsby</a></sub>
-	<br>
+	<br><br>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/SimonMayerhofer/mayerhofer.it.svg)
 ![GitHub](https://img.shields.io/github/license/SimonMayerhofer/mayerhofer.it.svg)
