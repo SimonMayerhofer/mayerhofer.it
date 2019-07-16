@@ -20,7 +20,8 @@ const Footer = () => {
 		<footer className="Footer">
 			© {new Date().getFullYear()} {author}
 			<br />
-			<Link to="/site-notice/">Site Notice</Link>
+			<Link to="/site-notice/">Site Notice</Link> |{' '}
+			<Link to="/privacy-policy/">Privacy Policy</Link>
 		</footer>
 	);
 };
