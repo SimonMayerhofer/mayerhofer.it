@@ -1,0 +1,19 @@
+button {
+	background: $white;
+	color: $black;
+	border: 2px solid $white;
+	padding: rem-calc(5 30);
+	display: inline-block;
+	border-radius: 50px;
+	transition: all 0.2s;
+	text-transform: uppercase;
+	font-family: $header-font-family;
+	cursor: pointer;
+	margin: rem-calc(15 0);
+
+	&:hover,
+	&:focus {
+		background: none;
+		color: $white;
+	}
+}
