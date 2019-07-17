@@ -1,0 +1,2 @@
+# Optional: Redirect default Netlify subdomain to primary domain
+https://mayerhofer.netlify.com/* https://www.mayerhofer.it/:splat 301!
