@@ -76,10 +76,10 @@ const config = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Simon Mayerhofer Blog`,
-				short_name: `Simons Blog`,
+				name: `Simon Mayerhofer's Blog`,
+				short_name: `Simon's Blog`,
 				start_url: `/`,
-				background_color: `#141414`,
+				background_color: `#000000`,
 				theme_color: `#000000`,
 				display: `minimal-ui`,
 				icon: `src/assets/logo-icon.png`,
