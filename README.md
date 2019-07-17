@@ -5,6 +5,7 @@
 	<sub>Built with <a href="https://github.com/gatsbyjs/gatsby">Gatsby</a></sub>
 	<br><br>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6391d89c-d7bc-4a4a-80bc-771a91df0048/deploy-status)](https://app.netlify.com/sites/mayerhofer/deploys)
 ![GitHub repo size](https://img.shields.io/github/repo-size/SimonMayerhofer/mayerhofer.it.svg)
 ![GitHub](https://img.shields.io/github/license/SimonMayerhofer/mayerhofer.it.svg)
 ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m778813857-8ed930410d1833a9f4209219.svg)
