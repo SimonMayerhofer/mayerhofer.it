@@ -3,7 +3,7 @@ const config = {
 		title: `Simon Mayerhofer`,
 		author: `Simon Mayerhofer`,
 		description: `Simon is a web-developer and co-founder of MEDIADUDES, an agency based in Freiburg, Germany.`,
-		siteUrl: `https://dev.mayerhofer.it/`,
+		siteUrl: `https://www.mayerhofer.it/`,
 		social: {
 			github: 'SimonMayerhofer',
 			codepen: 'maysi',
