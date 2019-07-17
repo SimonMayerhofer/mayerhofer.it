@@ -9,12 +9,6 @@
 		}
 	}
 
-	&__date {
-		font-family: $header-font-family;
-		font-weight: $global-weight-bold;
-		color: $light-gray;
-	}
-
 	&__heading {
 		margin: rem-calc(20 0);
 		font-size: rem-calc(26);

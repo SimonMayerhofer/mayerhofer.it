@@ -14,7 +14,6 @@ const ArticleList = () => {
 							slug
 						}
 						frontmatter {
-							date(formatString: "YYYY-MM-DD")
 							title
 							description
 						}
@@ -32,8 +31,6 @@ const ArticleList = () => {
 				const title = node.frontmatter.title || node.fields.slug;
 				return (
 					<article className="ArticleList__article" key={node.fields.slug}>
-						<small className="ArticleList__date">{node.frontmatter.date}</small>
-
 						<h3 className="ArticleList__heading">
 							<Link to={node.fields.slug}>{title}</Link>
 						</h3>
