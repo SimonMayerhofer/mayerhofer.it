@@ -2,7 +2,6 @@
 title: 'Hello World!'
 date: '2019-07-17T00:00:00.000Z'
 description: ''
-featuredImage: ''
 ---
 
 Finally there is it: my new website! 🙌 Built with modern technology and with focus on performance.

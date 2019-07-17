@@ -65,3 +65,17 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 		});
 	}
 };
+
+// see: https://stackoverflow.com/a/55548013/2180161
+exports.sourceNodes = ({ actions, schema }) => {
+	const { createTypes } = actions;
+	createTypes(`
+		type MarkdownRemarkFrontmatter {
+			featuredImage: File
+		}
+
+		type MarkdownRemark implements Node {
+			frontmatter: MarkdownRemarkFrontmatter
+		}
+	`);
+};
