@@ -20,5 +20,6 @@ import 'typeface-roboto';
 export const wrapPageElement = ({ element, props }) => {
 	// props provide same data to Layout as Page element will get
 	// including location, data, etc - no need to pass it
+	// eslint-disable-next-line react/jsx-props-no-spreading
 	return <Layout {...props}>{element}</Layout>;
 };

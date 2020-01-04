@@ -4,7 +4,7 @@ import SEO from './SEO';
 
 const Page = ({ children, title, description, lang, meta }) => {
 	return (
-		<React.Fragment>
+		<>
 			<SEO title={title} description={description} lang={lang} meta={meta} />
 
 			<div className="main-container">
@@ -12,7 +12,7 @@ const Page = ({ children, title, description, lang, meta }) => {
 					<main className="main-content">{children}</main>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

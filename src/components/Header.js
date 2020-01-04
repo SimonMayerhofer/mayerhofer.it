@@ -41,7 +41,7 @@ const Header = () => {
 						</Link>
 
 						{isHome ? (
-							<React.Fragment>
+							<>
 								<Image
 									className="Header__avatar"
 									fluid={avatar.childImageSharp.fluid}
@@ -64,7 +64,7 @@ const Header = () => {
 								</p>
 
 								<SocialMediaChannels />
-							</React.Fragment>
+							</>
 						) : null}
 					</header>
 				);

@@ -7,7 +7,7 @@ import WorkCTA from './WorkCTA';
 
 const Layout = ({ children }) => {
 	return (
-		<React.Fragment>
+		<>
 			<Header />
 
 			{children}
@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
 			<WorkCTA />
 
 			<Footer />
-		</React.Fragment>
+		</>
 	);
 };
 

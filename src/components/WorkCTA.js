@@ -7,6 +7,7 @@ const WorkCTA = ({ heading, buttonLabel, buttonLink }) => {
 	return (
 		<div className="WorkCTA">
 			<h2 className="WorkCTA__heading">{heading}</h2>
+			{/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
 			<a
 				className="WorkCTA__button"
 				href={buttonLink}
