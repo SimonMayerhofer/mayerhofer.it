@@ -90,20 +90,4 @@ const config = {
 	],
 };
 
-// only add analytics if site is published with netlify.
-if (process.env.CONTEXT === 'production') {
-	const googleAnalyticsCfg = {
-		resolve: `gatsby-plugin-google-analytics`,
-		options: {
-			trackingId: 'UA-143997142-1',
-			// Defines where to place the tracking script - `true` in the head and `false` in the body
-			head: true,
-			anonymize: true,
-			respectDNT: true,
-		},
-	};
-
-	config.plugins.push(googleAnalyticsCfg);
-}
-
 module.exports = config;
