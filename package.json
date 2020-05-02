@@ -79,7 +79,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop --https",
     "dev": "npm run develop",
     "format": "prettier --write ./**/*.{js,jsx,json,sass,scss,css}",
     "fix": "eslint --fix . && stylelint --fix ./**/*.{scss,sass,css}",
