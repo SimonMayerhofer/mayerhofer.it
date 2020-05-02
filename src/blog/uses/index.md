@@ -15,7 +15,7 @@ All I wanted was a modern and cheap phone which has a headphone jack, LTE band 8
 
 - Macbook Pro 16" 2019, 2,6 GHz 6-Core Intel Core i7, 32 GB RAM, AMD Radeon Pro 5500M 8 GB
 - Monitors @ office desk: LG 29UM57-P 29" ultra-wide, LG Flatron IPS235P 23" FHD (will be replaced soon with two 4k monitors)
-- Monitor @ home desk: AOC G2460PF 24" FHD (will be replaced soon with two 4k monitors)
+- Monitors @ home desk: Two [LG 27UL650-W 27" 4K](https://smile.amazon.de/dp/product/B07MKT2BNB/) and one AOC G2460PF 24" FHD mounted on a [HFTEK FY138DB for 3 displays](https://smile.amazon.de/dp/product/B075YZHCT7/)
 - My absolute favorite mouse is a Logitech G502 ([with cable](https://smile.amazon.de/dp/B07GS6ZS8J/), [without](https://smile.amazon.de/dp/B07QNYCLBJ/)). It's super helpful because of its many buttons which you can program to do certain tasks e.g. switching desktops or controlling music.
 - My keyboard is a Apple Magic Keyboard with Numeric Keypad
 - My chair in the office and at home is a [Robas Lund DX Racer 1](https://smile.amazon.de/dp/product/B0056YNWVO/)
@@ -43,9 +43,9 @@ Alfred is a nice alternative for the macOS Spotlight Search and speeds up my wor
 
 Let's me cleanup my menu bar so I only see the information and icons I really need.
 
-### [Brain.fm](https://www.brain.fm/)
+### [Brain.fm](https://brain.fm/invite/dEJxvMjpgL)
 
-Functional music to improve focus, relaxing and sleep. I use it mainly for working focused and it really helps me getting in the zone (flow state).
+Functional music to improve focus, relaxing and sleep. I use it mainly for working focused and it really helps me getting in the zone (flow state). [Get 1 month free here](https://brain.fm/invite/dEJxvMjpgL)
 
 ### [Dropbox](https://www.dropbox.com/)
 
