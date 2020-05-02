@@ -45,7 +45,7 @@ const BlogPostTemplate = ({ data }) => {
 				<div className="blog-post__edit-link-wrapper">
 					<a
 						className="blog-post__edit-link"
-						href={`https://github.com/SimonMayerhofer/mayerhofer.it/blob/master/src/blog/${post.parent.relativePath}`}
+						href={`https://github.com/SimonMayerhofer/mayerhofer.it/edit/master/src/blog/${post.parent.relativePath}`}
 						target="_blank"
 						rel="noopener noreferrer nofollow"
 					>
