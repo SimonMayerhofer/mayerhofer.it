@@ -5,7 +5,7 @@
  *
  * @param {string} path path of current page.
  */
-export const isRootPath = path => {
+export const isRootPath = (path) => {
 	const rootPath = `${__PATH_PREFIX__}/`;
 	return path === rootPath;
 };
