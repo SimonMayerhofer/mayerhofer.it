@@ -9,7 +9,7 @@ In this article I want to tell you what software and hardware I use to be more p
 
 ### Smartphone
 
-All I wanted was a modern and cheap phone which has a headphone jack, LTE band 800 and a fingerprint sensor: Xiaomi Mi A2 Lite
+Xiaomi Poco F2 Pro
 
 ### Computers & desk setup
 
