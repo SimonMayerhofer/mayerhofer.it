@@ -1,6 +1,6 @@
 ---
 title: 'My tech stack: What helps me being productive'
-date: '2020-01-04T00:00:00.000Z'
+date: '2021-04-16T00:00:00.000Z'
 ---
 
 In this article I want to tell you what software and hardware I use to be more productive and have an efficient workflow. As I find it helpful to see what others use to adapt some things, I'd like to share my stack as well. I'll keep this as a living document as things change regularly.
@@ -14,11 +14,10 @@ Xiaomi Poco F2 Pro
 ### Computers & desk setup
 
 - Macbook Pro 16" 2019, 2,6 GHz 6-Core Intel Core i7, 32 GB RAM, AMD Radeon Pro 5500M 8 GB
-- Monitors @ office desk: LG 29UM57-P 29" ultra-wide, LG Flatron IPS235P 23" FHD (will be replaced soon with two 4k monitors)
 - Monitors @ home desk: Two [LG 27UL650-W 27" 4K](https://smile.amazon.de/dp/product/B07MKT2BNB/) and one AOC G2460PF 24" FHD mounted on a [HFTEK FY138DB for 3 displays](https://smile.amazon.de/dp/product/B075YZHCT7/)
 - My absolute favorite mouse is a Logitech G502 ([with cable](https://smile.amazon.de/dp/B07GS6ZS8J/), [without](https://smile.amazon.de/dp/B07QNYCLBJ/)). It's super helpful because of its many buttons which you can program to do certain tasks e.g. switching desktops or controlling music.
 - My keyboard is a Apple Magic Keyboard with Numeric Keypad
-- My chair in the office and at home is a [Robas Lund DX Racer 1](https://smile.amazon.de/dp/product/B0056YNWVO/)
+- My chair is a [Robas Lund DX Racer 1](https://smile.amazon.de/dp/product/B0056YNWVO/)
 
 ### Other stuff
 
