@@ -17,15 +17,17 @@ const SiteNotice = () => {
 				<p>
 					Simon Mayerhofer
 					<br />
-					Zähringer Str. 373
+					zu Hd. Mayerhofer Holding GmbH
 					<br />
-					79108 Freiburg
+					Espasinger Str. 7
+					<br />
+					78333 Stockach
 				</p>
 				<h2>Contact</h2>
 				<p>
 					Phone: 015782459155
 					<br />
-					Telefax: 076188795528
+					Telefax: 076129675737
 					<br />
 					E-mail: sitenotice[-at-]maysi.de
 				</p>
@@ -33,9 +35,11 @@ const SiteNotice = () => {
 				<p>
 					Simon Mayerhofer
 					<br />
-					Zähringer Str. 373
+					zu Hd. Mayerhofer Holding GmbH
 					<br />
-					79108 Freiburg
+					Espasinger Str. 7
+					<br />
+					78333 Stockach
 				</p>
 				<h3>Liability for Contents</h3>
 				<p>
