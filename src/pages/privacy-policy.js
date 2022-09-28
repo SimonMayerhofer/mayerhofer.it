@@ -149,9 +149,11 @@ const PrivacyPolicy = () => {
 				<p>
 					Simon Mayerhofer
 					<br />
-					Zähringer Str. 373
+					zu Hd. Mayerhofer Holding GmbH
 					<br />
-					79108 Freiburg
+					Espasinger Str. 7
+					<br />
+					78333 Stockach
 				</p>
 				<p>
 					Phone: 015782459155
